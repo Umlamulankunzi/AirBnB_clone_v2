@@ -66,3 +66,11 @@ service { 'nginx':
   enable  => true,
   require => Package['nginx'],
 }
+
+
+# Exit with a successful status
+exec { 'exit-success':
+  command => 'exit 0',
+  path    => ['/bin', '/usr/bin'],
+  onlyif  => 'test $? -ne 0',
+}
