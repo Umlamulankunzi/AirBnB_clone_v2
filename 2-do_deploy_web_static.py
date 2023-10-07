@@ -8,6 +8,7 @@ import os
 env.hosts = ['54.89.26.161', '54.236.43.219']
 env.user = 'ubuntu'
 
+
 def do_deploy(archive_path):
     """Deploys archive files to webserver"""
     if not os.path.exists(archive_path):
