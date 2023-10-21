@@ -45,6 +45,7 @@ def number(n):
     """Returns astring"""
     return "{} is a number".format(n)
 
+
 # Route: '/number_template/<n>'
 @app.route("/number_template/<int:n>", strict_slashes=False)
 def number_template(n):

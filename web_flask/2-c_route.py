@@ -7,6 +7,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 # Route: root '/'
 @app.route('/', strict_slashes=False)
 def hello():
